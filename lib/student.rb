@@ -4,4 +4,8 @@ class Student < User
     super(first_name, last_name)
     @knowledge = []
   end
+  
+  def learn(string)
+    @knowledge << string
+  end
 end
